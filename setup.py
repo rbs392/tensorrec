@@ -14,10 +14,13 @@ setup(
   url='https://github.com/jfkirk/tensorrec',
   keywords=['machine-learning', 'tensorflow', 'recommendation-system', 'python', 'recommender-system'],
   classifiers=[],
+  dependency_links = [
+    'https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.14.0-cp36-cp36m-linux_x86_64.whl'
+  ],
   install_requires=[
       "numpy>=1.14.1",
       "scipy>=0.19.1",
       "six==1.11.0",
-      "tensorflow_gpu>=1.7.0",
+      "tensorflow_gpu>=1.14.0",
   ],
 )
